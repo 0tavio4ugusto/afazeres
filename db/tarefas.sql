@@ -28,3 +28,19 @@ CONSTRAINT fkusuario FOREIGN KEY  (idusuario) REFERENCES usuarios(idusuario),
 CONSTRAINT PRIMARY KEY (idtarefa, idusuario)
 
 );
+
+INSERT INTO usuarios values(
+    default,
+    "Otavio",
+    "otavio@email.com"
+    "12341234"
+);
+
+INSERT INTO tarefas VALUES (
+    default,
+    (SELECT FROM usuarios WHERE nome LIKE "Otavio"),
+    "curso",
+    "Fazer tudo que tem pra fazer",
+    0
+
+);
