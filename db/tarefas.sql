@@ -38,7 +38,7 @@ INSERT INTO usuarios values(
 
 INSERT INTO tarefas VALUES (
     default,
-    (SELECT FROM usuarios WHERE nome LIKE "Otavio"),
+    (SELECT idusuario FROM usuarios WHERE nome = "Otavio"),
     "curso",
     "Fazer tudo que tem pra fazer",
     0
