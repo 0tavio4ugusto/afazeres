@@ -30,7 +30,7 @@ CONSTRAINT PRIMARY KEY (idtarefa, idusuario)
 );
 
 INSERT INTO usuarios values(
-    default,
+    1,
     "Otavio",
     "otavio@email.com"
     "12341234"
@@ -38,7 +38,7 @@ INSERT INTO usuarios values(
 
 INSERT INTO tarefas VALUES (
     default,
-    (SELECT idusuario FROM usuarios WHERE nome = "Otavio"),
+    1,
     "curso",
     "Fazer tudo que tem pra fazer",
     0
